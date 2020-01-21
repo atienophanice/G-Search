@@ -7,10 +7,10 @@ This project used to search users and their repos from github
 Angular
 
 
-<!-- ## The link
+## The link
 Here is the link to this project  https://atienophanice.github.io/Git-Search/
 
-## Suport and Contact
+<!-- ## Suport and Contact
 If thier is any addition or clarification you can reach me through
 Email:atienophanice1@gmail.com
 
