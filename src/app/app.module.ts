@@ -1,24 +1,28 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ProfileService } from './profile.service';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UserComponent } from './user/user.component';
 import { ProfileComponent } from './profile/profile.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { UserComponent } from './user/user.component';
+import { NavbarComponent } from './navbar/navbar.component'
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserComponent,
     ProfileComponent,
+    UserComponent,
     NavbarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [ProfileService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

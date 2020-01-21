@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import 'rxjs/add/operator/map';
+// import 'rxjs/add/operator/map';
 
 @Injectable({
   providedIn: 'root'
@@ -15,12 +15,12 @@ export class ProfileService {
    this.username = 'atienophanice'
    }
    getProfileInfo(){
-    return this.http.get("2" + this.username + "?client_id=" + this.clientid + "&client_secret=" + this.clientsecret)
-    .map(res => res); 
+    return this.http.get("https://api.github.com/users/" + this.username + "?client_id=" + this.clientid + "&client_secret=" + this.clientsecret)
+    // .map(res => res.json()); 
    }
 getProfileRepos(){
   return this.http.get("https://api.github.com/users/" + this.username + "/repos?client_id=" + this.clientid + "&client_secret=" + this.clientsecret)
-    .map(res => res); 
+    // .map(res => res); 
 }
 
 updateProfile(username:string){
