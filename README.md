@@ -1,4 +1,4 @@
-# GitSearch
+# Git-Search
 By phanice Owino-author
 ## Description
 This project used to search users and their repos from github
