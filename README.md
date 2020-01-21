@@ -6,6 +6,7 @@ This project used to search users and their repos from github
 ## Terminologies used
 Angular
 HTML
+Css
 
 
 ## The link
